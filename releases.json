@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.17.6",
+    "date": "2026-11-17",
+    "items": [
+      {
+        "type": "fixed",
+        "text": "The GIF picker on phones shows fewer, larger GIFs in two columns, so they are easy to see and tap."
+      }
+    ]
+  },
+  {
     "version": "1.17.5",
     "date": "2026-11-17",
     "items": [
