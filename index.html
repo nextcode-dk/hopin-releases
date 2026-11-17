@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07080d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<title>Release notes - HopIn.chat</title>
+<meta name="description" content="What is new and improved in HopIn.chat, release by release.">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<main class="wrap">
+  <header>
+    <a class="brand" href="https://hopin.chat" aria-label="HopIn.chat home">
+          <span class="logo-wrap"><img class="brand-logo" src="favicon.svg" alt="" width="72" height="72"><span class="beta-tag" aria-label="Beta">BETA</span></span>
+          <span class="brand-name"><span class="brand-main">Hop<span class="brand-in">In</span></span><span class="brand-tld">.chat</span></span>
+        </a>
+    <h1>Release notes</h1>
+    <p class="lead">What is new, improved and fixed in HopIn.chat, newest first. HopIn.chat is in beta, so things move quickly.</p>
+    <a class="cta" href="https://hopin.chat">Open HopIn.chat</a>
+  </header>
+  <nav class="jump" id="jump" aria-label="Jump to a version"></nav>
+  <noscript><p class="lead">This page needs JavaScript to show the release list. You can read the raw list in <a href="releases.json">releases.json</a>.</p></noscript>
+  <section class="releases" id="releases" aria-live="polite"></section>
+  <footer class="foot">
+    <span>Release notes for <a href="https://hopin.chat">HopIn.chat</a></span>
+    <a href="https://hopin.chat/terms">Terms</a>
+    <a href="https://hopin.chat/privacy">Privacy</a>
+  </footer>
+</main>
+<script>
+(function () {
+  var LABEL = { new: "New", improved: "Improved", fixed: "Fixed" };
+  var list = document.getElementById("releases");
+  var jump = document.getElementById("jump");
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function slug(v) { return "v" + String(v).replace(/\./g, "-"); }
+  function fmt(d) {
+    var p = String(d).split("-");
+    var dt = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+    return dt.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+  }
+  fetch("releases.json", { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (data) {
+      data.forEach(function (rel) {
+        var id = slug(rel.version);
+        var a = el("a", null, "v" + rel.version);
+        a.href = "#" + id;
+        jump.appendChild(a);
+
+        var card = el("article", "release");
+        card.id = id;
+        var head = el("div", "release-head");
+        var h = el("h2");
+        var hl = el("a", null, "Version " + rel.version);
+        hl.href = "#" + id;
+        h.appendChild(hl);
+        head.appendChild(h);
+        var t = el("time", null, fmt(rel.date));
+        t.dateTime = rel.date;
+        head.appendChild(t);
+        card.appendChild(head);
+        if (rel.title) card.appendChild(el("p", "release-title", rel.title));
+        var ul = el("ul");
+        (rel.items || []).forEach(function (it) {
+          var li = el("li");
+          li.appendChild(el("span", "tag tag-" + it.type, LABEL[it.type] || it.type));
+          li.appendChild(el("span", null, it.text));
+          ul.appendChild(li);
+        });
+        card.appendChild(ul);
+        list.appendChild(card);
+      });
+      if (location.hash) {
+        var target = document.getElementById(location.hash.slice(1));
+        if (target) target.scrollIntoView();
+      }
+    })
+    .catch(function () {
+      list.appendChild(el("p", "lead", "The release list could not be loaded. Please try again later."));
+    });
+})();
+</script>
+</body>
+</html>
