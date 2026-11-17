@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.18.0",
+    "date": "2026-11-17",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Groundwork for faster live updates, so new messages can show up in a fraction of a second. It is switched off for now while we test it."
+      }
+    ]
+  },
+  {
     "version": "1.17.6",
     "date": "2026-11-17",
     "items": [
