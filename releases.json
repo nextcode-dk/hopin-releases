@@ -1,82 +1,405 @@
 [
-{"version":"1.17.1","date":"2026-11-17","title":"Add to Home Screen","items":[
-{"type":"improved","text":"Adding a chat to your phone's Home Screen now keeps the chat link and its name, so the icon opens that exact chat."}]},
-{"version":"1.17.0","date":"2026-11-16","title":"Event welcome screens","items":[
-{"type":"new","text":"When you create an event chat you can set up a welcome screen right away: a banner image, a welcome text and suggested messages."},
-{"type":"improved","text":"You can keep typing while the banner image is being read, and a failed part now tells you which one and why."}]},
-{"version":"1.16.0","date":"2026-11-16","title":"Lighter live updates","items":[
-{"type":"improved","text":"Quiet chats now use far fewer resources while you wait for new messages, which keeps busy events smooth."}]},
-{"version":"1.15.0","date":"2026-11-16","title":"Friendly links","items":[
-{"type":"new","text":"Chats get a readable link by default, like weekend-plans plus a few characters, with a live preview while you create the chat."},
-{"type":"improved","text":"Plain links keep working, and you can still turn the friendly link off when you create a chat."}]},
-{"version":"1.14.1","date":"2026-11-16","items":[
-{"type":"improved","text":"The encryption explainer on the create form is now a small info icon with a popover, so the form stays short."}]},
-{"version":"1.14.0","date":"2026-11-16","title":"Change PIN","items":[
-{"type":"new","text":"Chat admins can change the PIN in Settings. Everyone else enters the new PIN the next time they open the chat."}]},
-{"version":"1.13.0","date":"2026-11-16","title":"Welcome screen","items":[
-{"type":"new","text":"Admins can add a banner image and up to six suggested messages to the welcome card. Tapping a suggestion fills the composer without sending it."},
-{"type":"fixed","text":"Long welcome texts now scroll inside the card, so the prompts and the Got it button stay reachable."}]},
-{"version":"1.12.0","date":"2026-11-16","title":"Organizer tools","items":[
-{"type":"new","text":"Slow mode limits how often each person can post. Admins are exempt."},
-{"type":"new","text":"Admins can mute or remove a member from a message, lock the chat so only the admin posts, and end a live event right away."},
-{"type":"new","text":"Remove and change the PIN keeps a removed person out for good in PIN chats."},
-{"type":"improved","text":"Long names now wrap inside the organizer buttons and errors show next to the controls."}]},
-{"version":"1.11.2","date":"2026-11-16","items":[
-{"type":"improved","text":"The product name is now written HopIn.chat everywhere: the app, link previews, the poster and the legal pages."}]},
-{"version":"1.11.1","date":"2026-11-16","items":[
-{"type":"improved","text":"New home page wordmark: HopIn with a small .chat tucked underneath."}]},
-{"version":"1.11.0","date":"2026-11-16","title":"Create encrypted chats","items":[
-{"type":"new","text":"A switch on the create form makes an end-to-end encrypted chat. The key lives only in the invite link, and the share dialog, QR code and poster include it."},
-{"type":"new","text":"A lock icon in the header shows the chat is encrypted, with a plain-language sheet explaining what is and is not protected."},
-{"type":"new","text":"A reminder to save your full link, plus a way to forget the key on a device."},
-{"type":"fixed","text":"Business name colours on the home page."}]},
-{"version":"1.10.1","date":"2026-11-15","items":[
-{"type":"new","text":"A small cookie notice that never blocks the page. HopIn.chat only uses essential cookies."}]},
-{"version":"1.10.0","date":"2026-11-15","title":"Encrypted chats: export, recap, welcome","items":[
-{"type":"new","text":"Export an encrypted chat to Markdown or JSON. It is decrypted in your browser."},
-{"type":"new","text":"AI recap in encrypted chats asks for your consent each time before anything leaves your browser."},
-{"type":"new","text":"Welcome messages work in encrypted chats, and link previews load only when you tap Load preview."},
-{"type":"fixed","text":"Security hardening."}]},
-{"version":"1.9.0","date":"2026-11-15","title":"Encrypted attachments","items":[
-{"type":"new","text":"Images, PDFs, documents, voice notes and GIFs are now encrypted in your browser before upload in encrypted chats."},
-{"type":"improved","text":"Previews for encrypted files open straight from your device, and a failed download offers a Retry button."},
-{"type":"fixed","text":"Security hardening."}]},
-{"version":"1.8.0","date":"2026-11-15","title":"Stronger sign-in","items":[
-{"type":"improved","text":"Security hardening of chat sign-in and PIN storage. Admins can sign everyone out of a chat."},
-{"type":"improved","text":"Switching a chat between open and PIN now signs out the old members."}]},
-{"version":"1.7.0","date":"2026-11-15","title":"Printable QR poster","items":[
-{"type":"new","text":"Print a QR poster or table tent from the Share dialog, or save it as an image, so people can scan to join."}]},
-{"version":"1.6.0","date":"2026-11-15","title":"Encrypted messages","items":[
-{"type":"new","text":"In encrypted chats, messages, edits, replies, threads and polls are encrypted in your browser. Our server cannot read them."}]},
-{"version":"1.5.0","date":"2026-11-15","title":"Event chats","items":[
-{"type":"new","text":"A new Events page and an event preset when you create a chat."},
-{"type":"new","text":"Set a start and end time. Before the start and after the end only the admin can post, and old messages are cleared a day after the event."}]},
-{"version":"1.4.0","date":"2026-11-15","title":"Readable chat links","items":[
-{"type":"new","text":"Chats can have a friendly address based on their name. It is shown and shareable from the chat, and the original link keeps working."},
-{"type":"new","text":"First groundwork for end-to-end encryption."}]},
-{"version":"1.3.1","date":"2026-11-15","items":[
-{"type":"improved","text":"A full design pass: consistent spacing, cards, inputs, buttons and sheets across the app."}]},
-{"version":"1.3.0","date":"2026-11-15","title":"Block and report","items":[
-{"type":"new","text":"Report a message to the chat admin, who can review and dismiss reports."},
-{"type":"new","text":"Block someone to hide their messages on your device."}]},
-{"version":"1.2.0","date":"2026-11-15","title":"Welcome message","items":[
-{"type":"new","text":"Admins can pin a welcome message that new members see when they join."}]},
-{"version":"1.1.0","date":"2026-11-15","title":"Open chats and admins","items":[
-{"type":"new","text":"Chats no longer need a PIN. Create an open chat that anyone with the link can join."},
-{"type":"new","text":"Each chat has an admin. Only the creator can delete the chat, and everyone can leave."},
-{"type":"improved","text":"Security hardening for open chats."}]},
-{"version":"1.0.3","date":"2026-11-15","items":[
-{"type":"fixed","text":"More space between the PIN field and the Terms checkbox on the create card."}]},
-{"version":"1.0.2","date":"2026-11-15","items":[
-{"type":"new","text":"On phones: swipe a message to reply, and a touch-friendly action sheet for each message."},
-{"type":"improved","text":"Dialogs on phones now open as bottom sheets."}]},
-{"version":"1.0.1","date":"2026-11-15","items":[
-{"type":"improved","text":"The composer hides Markdown markers and shows only the styled text."},
-{"type":"improved","text":"Better phone support: safe areas, keyboard handling and a one-row composer."}]},
-{"version":"1.0.0","date":"2026-11-15","title":"First public release","items":[
-{"type":"new","text":"Private chat rooms with an optional PIN: one link, no accounts and no installs."},
-{"type":"new","text":"Voice messages, polls, threads, pinned messages, reactions and an emoji search with skin tones."},
-{"type":"new","text":"Image and document previews, link previews, and export to Markdown or JSON."},
-{"type":"new","text":"Read receipts and delivery ticks, a share dialog with QR code, and an installable app that works offline."},
-{"type":"improved","text":"Terms and Privacy pages, a refreshed HopIn.chat logo and a compact phone header."}]}
+  {
+    "version": "1.17.2",
+    "date": "2026-11-17",
+    "items": [
+      {
+        "type": "improved",
+        "text": "The version number in the footer now opens these release notes."
+      }
+    ]
+  },
+  {
+    "version": "1.17.1",
+    "date": "2026-11-17",
+    "title": "Add to Home Screen",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Adding a chat to your phone's Home Screen now keeps the chat link and its name, so the icon opens that exact chat."
+      }
+    ]
+  },
+  {
+    "version": "1.17.0",
+    "date": "2026-11-16",
+    "title": "Event welcome screens",
+    "items": [
+      {
+        "type": "new",
+        "text": "When you create an event chat you can set up a welcome screen right away: a banner image, a welcome text and suggested messages."
+      },
+      {
+        "type": "improved",
+        "text": "You can keep typing while the banner image is being read, and a failed part now tells you which one and why."
+      }
+    ]
+  },
+  {
+    "version": "1.16.0",
+    "date": "2026-11-16",
+    "title": "Lighter live updates",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Quiet chats now use far fewer resources while you wait for new messages, which keeps busy events smooth."
+      }
+    ]
+  },
+  {
+    "version": "1.15.0",
+    "date": "2026-11-16",
+    "title": "Friendly links",
+    "items": [
+      {
+        "type": "new",
+        "text": "Chats get a readable link by default, like weekend-plans plus a few characters, with a live preview while you create the chat."
+      },
+      {
+        "type": "improved",
+        "text": "Plain links keep working, and you can still turn the friendly link off when you create a chat."
+      }
+    ]
+  },
+  {
+    "version": "1.14.1",
+    "date": "2026-11-16",
+    "items": [
+      {
+        "type": "improved",
+        "text": "The encryption explainer on the create form is now a small info icon with a popover, so the form stays short."
+      }
+    ]
+  },
+  {
+    "version": "1.14.0",
+    "date": "2026-11-16",
+    "title": "Change PIN",
+    "items": [
+      {
+        "type": "new",
+        "text": "Chat admins can change the PIN in Settings. Everyone else enters the new PIN the next time they open the chat."
+      }
+    ]
+  },
+  {
+    "version": "1.13.0",
+    "date": "2026-11-16",
+    "title": "Welcome screen",
+    "items": [
+      {
+        "type": "new",
+        "text": "Admins can add a banner image and up to six suggested messages to the welcome card. Tapping a suggestion fills the composer without sending it."
+      },
+      {
+        "type": "fixed",
+        "text": "Long welcome texts now scroll inside the card, so the prompts and the Got it button stay reachable."
+      }
+    ]
+  },
+  {
+    "version": "1.12.0",
+    "date": "2026-11-16",
+    "title": "Organizer tools",
+    "items": [
+      {
+        "type": "new",
+        "text": "Slow mode limits how often each person can post. Admins are exempt."
+      },
+      {
+        "type": "new",
+        "text": "Admins can mute or remove a member from a message, lock the chat so only the admin posts, and end a live event right away."
+      },
+      {
+        "type": "new",
+        "text": "Remove and change the PIN keeps a removed person out for good in PIN chats."
+      },
+      {
+        "type": "improved",
+        "text": "Long names now wrap inside the organizer buttons and errors show next to the controls."
+      }
+    ]
+  },
+  {
+    "version": "1.11.2",
+    "date": "2026-11-16",
+    "items": [
+      {
+        "type": "improved",
+        "text": "The product name is now written HopIn.chat everywhere: the app, link previews, the poster and the legal pages."
+      }
+    ]
+  },
+  {
+    "version": "1.11.1",
+    "date": "2026-11-16",
+    "items": [
+      {
+        "type": "improved",
+        "text": "New home page wordmark: HopIn with a small .chat tucked underneath."
+      }
+    ]
+  },
+  {
+    "version": "1.11.0",
+    "date": "2026-11-16",
+    "title": "Create encrypted chats",
+    "items": [
+      {
+        "type": "new",
+        "text": "A switch on the create form makes an end-to-end encrypted chat. The key lives only in the invite link, and the share dialog, QR code and poster include it."
+      },
+      {
+        "type": "new",
+        "text": "A lock icon in the header shows the chat is encrypted, with a plain-language sheet explaining what is and is not protected."
+      },
+      {
+        "type": "new",
+        "text": "A reminder to save your full link, plus a way to forget the key on a device."
+      },
+      {
+        "type": "fixed",
+        "text": "Business name colours on the home page."
+      }
+    ]
+  },
+  {
+    "version": "1.10.1",
+    "date": "2026-11-15",
+    "items": [
+      {
+        "type": "new",
+        "text": "A small cookie notice that never blocks the page. HopIn.chat only uses essential cookies."
+      }
+    ]
+  },
+  {
+    "version": "1.10.0",
+    "date": "2026-11-15",
+    "title": "Encrypted chats: export, recap, welcome",
+    "items": [
+      {
+        "type": "new",
+        "text": "Export an encrypted chat to Markdown or JSON. It is decrypted in your browser."
+      },
+      {
+        "type": "new",
+        "text": "AI recap in encrypted chats asks for your consent each time before anything leaves your browser."
+      },
+      {
+        "type": "new",
+        "text": "Welcome messages work in encrypted chats, and link previews load only when you tap Load preview."
+      },
+      {
+        "type": "fixed",
+        "text": "Security hardening."
+      }
+    ]
+  },
+  {
+    "version": "1.9.0",
+    "date": "2026-11-15",
+    "title": "Encrypted attachments",
+    "items": [
+      {
+        "type": "new",
+        "text": "Images, PDFs, documents, voice notes and GIFs are now encrypted in your browser before upload in encrypted chats."
+      },
+      {
+        "type": "improved",
+        "text": "Previews for encrypted files open straight from your device, and a failed download offers a Retry button."
+      },
+      {
+        "type": "fixed",
+        "text": "Security hardening."
+      }
+    ]
+  },
+  {
+    "version": "1.8.0",
+    "date": "2026-11-15",
+    "title": "Stronger sign-in",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Security hardening of chat sign-in and PIN storage. Admins can sign everyone out of a chat."
+      },
+      {
+        "type": "improved",
+        "text": "Switching a chat between open and PIN now signs out the old members."
+      }
+    ]
+  },
+  {
+    "version": "1.7.0",
+    "date": "2026-11-15",
+    "title": "Printable QR poster",
+    "items": [
+      {
+        "type": "new",
+        "text": "Print a QR poster or table tent from the Share dialog, or save it as an image, so people can scan to join."
+      }
+    ]
+  },
+  {
+    "version": "1.6.0",
+    "date": "2026-11-15",
+    "title": "Encrypted messages",
+    "items": [
+      {
+        "type": "new",
+        "text": "In encrypted chats, messages, edits, replies, threads and polls are encrypted in your browser. Our server cannot read them."
+      }
+    ]
+  },
+  {
+    "version": "1.5.0",
+    "date": "2026-11-15",
+    "title": "Event chats",
+    "items": [
+      {
+        "type": "new",
+        "text": "A new Events page and an event preset when you create a chat."
+      },
+      {
+        "type": "new",
+        "text": "Set a start and end time. Before the start and after the end only the admin can post, and old messages are cleared a day after the event."
+      }
+    ]
+  },
+  {
+    "version": "1.4.0",
+    "date": "2026-11-15",
+    "title": "Readable chat links",
+    "items": [
+      {
+        "type": "new",
+        "text": "Chats can have a friendly address based on their name. It is shown and shareable from the chat, and the original link keeps working."
+      },
+      {
+        "type": "new",
+        "text": "First groundwork for end-to-end encryption."
+      }
+    ]
+  },
+  {
+    "version": "1.3.1",
+    "date": "2026-11-15",
+    "items": [
+      {
+        "type": "improved",
+        "text": "A full design pass: consistent spacing, cards, inputs, buttons and sheets across the app."
+      }
+    ]
+  },
+  {
+    "version": "1.3.0",
+    "date": "2026-11-15",
+    "title": "Block and report",
+    "items": [
+      {
+        "type": "new",
+        "text": "Report a message to the chat admin, who can review and dismiss reports."
+      },
+      {
+        "type": "new",
+        "text": "Block someone to hide their messages on your device."
+      }
+    ]
+  },
+  {
+    "version": "1.2.0",
+    "date": "2026-11-15",
+    "title": "Welcome message",
+    "items": [
+      {
+        "type": "new",
+        "text": "Admins can pin a welcome message that new members see when they join."
+      }
+    ]
+  },
+  {
+    "version": "1.1.0",
+    "date": "2026-11-15",
+    "title": "Open chats and admins",
+    "items": [
+      {
+        "type": "new",
+        "text": "Chats no longer need a PIN. Create an open chat that anyone with the link can join."
+      },
+      {
+        "type": "new",
+        "text": "Each chat has an admin. Only the creator can delete the chat, and everyone can leave."
+      },
+      {
+        "type": "improved",
+        "text": "Security hardening for open chats."
+      }
+    ]
+  },
+  {
+    "version": "1.0.3",
+    "date": "2026-11-15",
+    "items": [
+      {
+        "type": "fixed",
+        "text": "More space between the PIN field and the Terms checkbox on the create card."
+      }
+    ]
+  },
+  {
+    "version": "1.0.2",
+    "date": "2026-11-15",
+    "items": [
+      {
+        "type": "new",
+        "text": "On phones: swipe a message to reply, and a touch-friendly action sheet for each message."
+      },
+      {
+        "type": "improved",
+        "text": "Dialogs on phones now open as bottom sheets."
+      }
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "date": "2026-11-15",
+    "items": [
+      {
+        "type": "improved",
+        "text": "The composer hides Markdown markers and shows only the styled text."
+      },
+      {
+        "type": "improved",
+        "text": "Better phone support: safe areas, keyboard handling and a one-row composer."
+      }
+    ]
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-11-15",
+    "title": "First public release",
+    "items": [
+      {
+        "type": "new",
+        "text": "Private chat rooms with an optional PIN: one link, no accounts and no installs."
+      },
+      {
+        "type": "new",
+        "text": "Voice messages, polls, threads, pinned messages, reactions and an emoji search with skin tones."
+      },
+      {
+        "type": "new",
+        "text": "Image and document previews, link previews, and export to Markdown or JSON."
+      },
+      {
+        "type": "new",
+        "text": "Read receipts and delivery ticks, a share dialog with QR code, and an installable app that works offline."
+      },
+      {
+        "type": "improved",
+        "text": "Terms and Privacy pages, a refreshed HopIn.chat logo and a compact phone header."
+      }
+    ]
+  }
 ]
