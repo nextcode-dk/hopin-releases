@@ -1,5 +1,25 @@
 [
   {
+    "version": "1.17.4",
+    "date": "2026-11-17",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Each chat installs as its own app, so you can install several chats on a computer without them opening in each other."
+      }
+    ]
+  },
+  {
+    "version": "1.17.3",
+    "date": "2026-11-17",
+    "items": [
+      {
+        "type": "fixed",
+        "text": "Adding an encrypted chat to your Home Screen now keeps the full link, so the icon opens the chat straight away."
+      }
+    ]
+  },
+  {
     "version": "1.17.2",
     "date": "2026-11-17",
     "items": [
