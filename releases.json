@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.17.5",
+    "date": "2026-11-17",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Opening a chat no longer puts the cursor in the message box. Turn on Focus the message box in Settings if you want it."
+      }
+    ]
+  },
+  {
     "version": "1.17.4",
     "date": "2026-11-17",
     "items": [
