@@ -1,5 +1,25 @@
 [
   {
+    "version": "1.18.2",
+    "date": "2026-11-18",
+    "items": [
+      {
+        "type": "improved",
+        "text": "The home page is simpler, with a shorter form for starting a chat."
+      }
+    ]
+  },
+  {
+    "version": "1.18.1",
+    "date": "2026-11-18",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Chats started from the home page use end-to-end encryption and easy-to-share links by default. PIN protection is optional and uses six digits."
+      }
+    ]
+  },
+  {
     "version": "1.18.0",
     "date": "2026-11-17",
     "items": [
