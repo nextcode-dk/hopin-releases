@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.19.0",
+    "date": "2026-11-20",
+    "items": [
+      {
+        "type": "added",
+        "text": "Event organizers can add a chat button to their event page. Visitors can open the chat in a panel or a new tab."
+      }
+    ]
+  },
+  {
     "version": "1.18.2",
     "date": "2026-11-18",
     "items": [
