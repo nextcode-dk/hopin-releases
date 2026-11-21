@@ -1,10 +1,78 @@
 [
   {
+    "version": "1.22.0",
+    "date": "2026-11-21",
+    "items": [
+      {
+        "type": "new",
+        "text": "Support chats (opt-in, available on request): add a chat bubble to your website and every visitor gets their own private conversation with your team, answered from one inbox."
+      },
+      {
+        "type": "new",
+        "text": "Owners get email notifications for new conversations, plus unread counts in the inbox."
+      },
+      {
+        "type": "new",
+        "text": "Event chats and standard chats can now be set up for clients, with start and end times for events."
+      },
+      {
+        "type": "improved",
+        "text": "Every dialog now closes with an X in the top-right corner."
+      },
+      {
+        "type": "improved",
+        "text": "The Settings dialog is wider on tablets and desktops."
+      }
+    ]
+  },
+  {
+    "version": "1.21.0",
+    "date": "2026-11-20",
+    "items": [
+      {
+        "type": "new",
+        "text": "Branded chats show the organisation's logo and name as the heading instead of HopIn."
+      },
+      {
+        "type": "new",
+        "text": "Every chat window now shows a small \"Powered by hopin.chat\" link at the bottom."
+      },
+      {
+        "type": "fixed",
+        "text": "The HopIn.chat logo on the home page displays correctly again."
+      }
+    ]
+  },
+  {
+    "version": "1.20.1",
+    "date": "2026-11-20",
+    "items": [
+      {
+        "type": "improved",
+        "text": "Smoother, cleaner management tools for organisations that use branded chats."
+      }
+    ]
+  },
+  {
+    "version": "1.20.0",
+    "date": "2026-11-20",
+    "items": [
+      {
+        "type": "new",
+        "text": "Branded chats for organisations (available on request): your colours, logo and name on the join screen and in the chat header."
+      },
+      {
+        "type": "new",
+        "text": "We can set up a branded chat for your organisation and send you a one-time invite to become its admin."
+      }
+    ]
+  },
+  {
     "version": "1.19.0",
     "date": "2026-11-20",
     "items": [
       {
-        "type": "added",
+        "type": "new",
         "text": "Event organizers can add a chat button to their event page. Visitors can open the chat in a panel or a new tab."
       }
     ]
